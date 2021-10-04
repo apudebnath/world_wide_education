@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { serviceContext } from '../Home/Home';
 import './Services.css';
 
@@ -28,8 +28,10 @@ const Services = () => {
                           <Card.Body>
                             <Card.Title className="titleStyle">{service.title}</Card.Title>
                             <Card.Title>Price: ${service.price}</Card.Title>
-                            <Card.Text>{service.description.slice(0, 160)}</Card.Text>  
-                                <button className="border rounded bg-info py-1 px-3">Know More</button>
+                            <Card.Text>{service.description.slice(0, 160)}</Card.Text> 
+                            <NavLink to= {`/details/${service?.id}`}>
+                                <button className="border rounded py-1 px-3" style={{background: 'rgb(21, 163, 173)', color:'white'}}>Details</button>
+                            </NavLink>
                           </Card.Body>
                         </Card>
                       </Col>)

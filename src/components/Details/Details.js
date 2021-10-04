@@ -1,11 +1,27 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router';
+import img from '../../images/details.jpg';
 
 const Details = () => {
-    const{serviceId} = useParams();
+    const{id} = useParams();
+    const [details, setDetails] = useState([]);
+    
+    useEffect(() => {
+        fetch('https://raw.githubusercontent.com/apudebnath/data-json/main/jsonData.js')
+        .then(res => res.json())
+        .then(data => setDetails(data))
+    }, []);
+       console.log(details);
+    useEffect(() => {
+        const showDetails = details.find(detail => detail.id === id);
+        console.log(showDetails)
+    }, [details]);
     return (
         <div>
-            <h2>Details</h2>
+            <h2>{}</h2>
+            <img src={img} alt="" />
         </div>
     );
 };

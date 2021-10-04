@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
 import Details from './components/Details/Details';
+import Contact from './components/Contact/Contact';
 
 
 function App() {
@@ -22,14 +23,17 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/details/:id">
-            <Details></Details>
-          </Route>
           <Route path="/services">
             <Services></Services>
           </Route>
           <Route path="/about">
             <About></About>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/details/:id">
+            <Details></Details>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
