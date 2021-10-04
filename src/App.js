@@ -10,7 +10,7 @@ import NotFound from './components/NotFound/NotFound';
 import Details from './components/Details/Details';
 import Contact from './components/Contact/Contact';
 
-
+// BrowserRouter
 function App() {
   return (
     <div className="App">
@@ -32,6 +32,7 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
+          {/* Dynamic Router */}
           <Route path="/details/:id">
             <Details></Details>
           </Route>

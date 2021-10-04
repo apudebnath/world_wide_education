@@ -1,7 +1,8 @@
 import React from 'react';
 import conImg from '../../images/cont.jpg'
 const Contact = () => {
-    return (
+    return ( 
+        //content image and text section
         <div >
             <div className="d-flex">
                 <div className="text-start m-5 pt-5">

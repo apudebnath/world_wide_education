@@ -8,6 +8,7 @@ import { serviceContext } from '../Home/Home';
 import './Services.css';
 
 const Services = () => {
+    // Context api use
     const services = useContext(serviceContext);
     const [serviceAll, setServiceAll] = useState([]);
     useEffect(() => {
@@ -18,7 +19,7 @@ const Services = () => {
 
     return (
         <div >
-            <h2 className="my-5">{services}</h2>
+            <h2 className="mt-5">{services}</h2>
             <div className="mb-5">
             <Row xs={1} md={3} className="g-5 m-auto">
                 {
@@ -41,12 +42,5 @@ const Services = () => {
         </div>
     );
 };
-/* 
-<div className="border-3">
-                        <Col className="w-75">
-                            <img className="" src={service.picture} alt="" />
-                            <h4>{service.title}</h4>
-                        </Col>
-                    </div>
-*/
+
 export default Services;

@@ -5,14 +5,15 @@ import { useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import Hero from '../Hero/Hero';
 import Service from '../Service/Service';
-import Services from '../Services/Services';
 import './Home.css';
 
+// context api
 export const serviceContext = createContext('Our Courses');
 
 const Home = () => {
     const [services, setServices] = useState([]);
     const homeServices= services.slice(0,4);
+    // Get data from fakedata
     useEffect(() => {
         fetch(`https://raw.githubusercontent.com/apudebnath/data-json/main/jsonData.js`)
         .then(res => res.json())

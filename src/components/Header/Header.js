@@ -10,16 +10,16 @@ const Header = () => {
             <>
   <Navbar style={{ background: 'rgb(191, 213, 221)'}}  variant="light">
     <Container>
-    <Navbar.Brand href="#home">World Wide Education</Navbar.Brand>
+    <Navbar.Brand style={{fontSize: '30px', fontWeight: 'bold'}} href="#home">World Wide Education</Navbar.Brand>
     <Nav className="ms-auto">
         <Stack direction="horizontal" gap={5} className="">
             <NavLink
                 to="/home"
                 style={{ color: 'rgb(19, 63, 99)',
-                    fontSize: '16px',
+                    fontSize: '18px',
                     textDecoration: "none"}}
                 activeStyle={{
-                    fontSize: '16px',
+                    fontSize: '18px',
                    fontWeight: "bold",
                    color: "#333",
                    textDecoration: "none"
@@ -30,9 +30,10 @@ const Header = () => {
             <NavLink
                 to="/services" 
                 style={{ color: 'rgb(35, 105, 163)',
+                    fontSize: '18px',
                     textDecoration: "none"}}
                 activeStyle={{
-                    fontSize: '16px',
+                    fontSize: '18px',
                    fontWeight: "bold",
                    color: "#333",
                    textDecoration: "none"
@@ -43,9 +44,10 @@ const Header = () => {
             <NavLink
                 to="/about"
                 style={{ color: 'rgb(35, 105, 163)',
+                    fontSize: '18px',
                     textDecoration: "none"}}
                 activeStyle={{
-                    fontSize: '16px',
+                    fontSize: '18px',
                    fontWeight: "bold",
                    color: "#333",
                    textDecoration: "none"
@@ -56,9 +58,10 @@ const Header = () => {
             <NavLink
                 to="/contact"
                 style={{ color: 'rgb(35, 105, 163)',
+                    fontSize: '18px',
                     textDecoration: "none"}}
                 activeStyle={{
-                    fontSize: '16px',
+                    fontSize: '18px',
                    fontWeight: "bold",
                    color: "#333",
                    textDecoration: "none"

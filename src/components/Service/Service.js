@@ -18,7 +18,7 @@ const Service = (props) => {
                   <Card.Title>{title}</Card.Title>
                     <Card.Text>Price: ${price}</Card.Text>
                     <Card.Text>{description.slice(0,150)}</Card.Text>
-                    <button className="border rounded py-1 px-3" style={{background: 'rgb(21, 163, 173)', color:'white'}}>Know More</button>
+                    <button className="border rounded py-2 px-4" style={{background: 'rgb(21, 163, 173)', color:'white'}}>Know More</button>
                     {/* <p><span>{twitter}</span> <span>{insta}</span> </p> */}
                 </Card.Body>
               </Card>

@@ -20,8 +20,7 @@ const Details = () => {
     }, [details]);
     return (
         <div>
-            <h2>{}</h2>
-            <img src={img} alt="" />
+            <img className="img-fluid w-100" src={img} alt="" />
         </div>
     );
 };
