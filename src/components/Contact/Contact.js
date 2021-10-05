@@ -1,5 +1,8 @@
 import React from 'react';
-import conImg from '../../images/cont.jpg'
+import conImg from '../../images/cont.jpg';
+import contImg from '../../images/cont1.jpg';
+import './Contact.css';
+
 const Contact = () => {
     return ( 
         //content image and text section
@@ -11,13 +14,13 @@ const Contact = () => {
                     <p>Pick from over 50,000 online video courses with new additions published every month.</p>
                     <button className="mt-3 py-2 px-3 rounded border" style={{background: 'rgb(21, 163, 173)', color:'white'}}>Help Center</button>
                 </div>
-                <div className="m-5">
+                <div className="m-5 imgStyle">
                    <img className="rounded" src={conImg} alt="" />
                 </div>
             </div>
             <div className="d-flex">
-                <div className="m-5">
-                    <img className="rounded" src={conImg} alt="" />
+                <div className="m-5 imgStyle">
+                    <img className="rounded" src={contImg} alt="" />
                 </div>
                 <div className="text-start m-5 pt-5">
                     <h2>London</h2>

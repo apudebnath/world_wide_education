@@ -27,15 +27,15 @@ const Home = () => {
                 <Hero></Hero>
             </div>
             <h2 className="mt-5">Our Courses</h2>
-            <div className="m-5">
-            <Row xs={1} md={2} className="g-5 m-5">
-            {
-                homeServices.map(service => <Service 
-                    key={service.id}
-                    service={service}></Service>,
+            <div className="m-5 text-center">
+                <Row xs={1} md={2} className=" g-5 justify-content-center">
+                {
+                    homeServices.map(service => <Service 
+                        key={service.id}
+                        service={service}></Service>,
                     )
-            } 
-            </Row>
+                } 
+                </Row>
             </div>  
         </div>
         </serviceContext.Provider> 
@@ -43,3 +43,4 @@ const Home = () => {
 };
 
 export default Home;
+/* g-5 m-5 */

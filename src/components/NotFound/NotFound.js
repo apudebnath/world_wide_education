@@ -9,9 +9,9 @@ const NotFound = () => {
                     <img src={imageNotFound} alt="" />
                 </div>
                 <h1 className="pt-5">404!</h1>
-                <p>
+                <h4>
                     The Page you are looking for is NOT AVAILABLE!!! <br /> Please Try again ....
-                </p>
+                </h4>
             </div>
         </div>
     );

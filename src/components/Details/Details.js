@@ -14,12 +14,14 @@ const Details = () => {
         .then(data => setDetails(data))
     }, []);
        console.log(details);
-    useEffect(() => {
-        const showDetails = details.find(detail => detail.id === id);
-        console.log(showDetails)
-    }, [details]);
+
+    useEffect(() =>{
+        const info = details.find(detail => detail.id ===id)
+        console.log(info)
+    }, [details])
     return (
         <div>
+            <h3>{id}</h3>
             <img className="img-fluid w-100" src={img} alt="" />
         </div>
     );
