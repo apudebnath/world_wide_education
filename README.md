@@ -1,6 +1,6 @@
 # World Wide Education
 
-This project was bootstrapped with React app. Here I am trying to manage a learning site as much as easy way to show different course and course info to understand what services you can provide. This is site also live in Netlify: [https://world-wideedu-04au21gst.netlify.app/]
+This project was bootstrapped with React app. Here I am trying to manage a learning site as much as easy way to show different course and course info to understand what services you can provide. This is site also live in Netlify: [https://world-wideedu-04oc21tob.netlify.app/]
 
 ## What is the main purpose of this website: 
 
